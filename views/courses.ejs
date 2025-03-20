@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+      <!-- Start header -->
+      <%-include('partials/_header');  %>
+      <!-- End header -->
+      <div class="back_re">
+         <div class="container">
+            <div class="row">
+               <div class="col-md-12">
+                  <div class="title">
+                     <h2>Courses</h2>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!-- gallery -->
+      <div>
+         <div class="container">
+            <div class="row justify-content-center mt-5">
+               <div class="">
+                  <div class="col-sm-12">
+                     <div class="row">
+                        <% for( let i = 0; i < courses.length; i++ ) { %>
+                        <div class="card" style="width: 18rem;">
+                           <img src="images/gallery5.jpg" class="card-img-top" alt="...">
+                           <div class="card-body">
+                             <p class="card-title h5"> <%= courses[i].name %> </p>
+                             <p class="card-text"> <%= courses[i].description %> </p>
+                             <p class="h6 text-primary" > Teacher Name </p>
+                           </div>
+                         </div>
+                        <% } %>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!-- end gallery -->
+      <!--  footer -->
+      <%-include('partials/_footer');  %>
+      <!-- end footer -->
+      <!-- Javascript files-->
+      <script src="js/jquery.min.js"></script>
+      <script src="js/bootstrap.bundle.min.js"></script>
+      <script src="js/jquery-3.0.0.min.js"></script>
+      <!-- sidebar -->
+      <script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
+      <script src="js/custom.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.8.1/baguetteBox.min.js"></script>
+      <script>
+         baguetteBox.run('.tz-gallery');
+      </script>
+   </body>
+</html>
