@@ -25,7 +25,7 @@
                         <div class="card" style="width: 18rem;">
                            <img src="images/gallery5.jpg" class="card-img-top" alt="...">
                            <div class="card-body">
-                             <p class="card-title h5"> <%= courses[i].name %> </p>
+                             <p class="card-title h5"> <a href="/courses/<%= courses[i].slug %>"> <%= courses[i].name %> </a> </p>
                              <p class="card-text"> <%= courses[i].description %> </p>
                              <p class="h6 text-primary" > Teacher Name </p>
                            </div>
