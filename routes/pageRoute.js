@@ -6,5 +6,6 @@ const router = express.Router();
 router.route('/').get(pageControllers.getIndexPage);
 router.route('/about').get(pageControllers.getAboutPage);
 router.route('/contact').get(pageControllers.getContactPage);
+router.route('/dashboard').get(pageControllers.getDashboardPage);
 
 module.exports = router;

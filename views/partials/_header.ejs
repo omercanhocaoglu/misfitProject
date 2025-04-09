@@ -63,8 +63,8 @@
                             <li class="nav-item <%= page_name === 'about' && 'active' %>">
                                <a class="nav-link" href="/about">About</a>
                             </li>
-                            <li class="nav-item">
-                               <a class="nav-link" href="/service">Services</a>
+                            <li class="nav-item <%= page_name === 'dashboard' && 'active' %>">
+                               <a class="nav-link" href="/dashboard">Dashboard</a>
                             </li>
                             <li class="nav-item">
                                <a class="nav-link" href="trainer.html">Trainer</a>
@@ -75,6 +75,12 @@
                             <li class="nav-item <%= page_name === "contact" && "active" %>">
                                <a class="nav-link" href="/contact">Contact Us</a>
                             </li>
+                            <li class="nav-item <%= page_name === "" && "active" %>">
+                              <a class="nav-link" href="/contact"> <i class="fa fa-user-plus"></i> </a>
+                           </li>
+                           <li class="nav-item <%= page_name === "" && "active" %>">
+                              <a class="nav-link" href="/contact"> <i class="fa fa-window-close"></i> </a>
+                           </li>
                          </ul>
                       </div>
                    </nav>

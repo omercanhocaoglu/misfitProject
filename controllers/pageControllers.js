@@ -16,3 +16,9 @@ exports.getContactPage = (req, res) => {
         page_name: 'contact'
     });
 };
+// dasboard page
+exports.getDashboardPage = (req, res) => {
+    res.status(200).render('dashboard', {
+        page_name: 'dashboard'
+    });
+};
