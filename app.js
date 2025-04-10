@@ -3,6 +3,7 @@ const mongoose = require("mongoose");
 const pageControllers = require("./controllers/pageControllers");
 const pageRouter = require("./routes/pageRoute");
 const courseRouter = require("./routes/courseRoute");
+const userRoute = require('./routes/userRoute');
 
 const app = express();
 const port = 3000;
@@ -28,6 +29,7 @@ app.use(express.urlencoded({ extended: true })) // for parsing application/x-www
 // Routes
 app.use("/", pageRouter );
 app.use("/courses", courseRouter );
+app.use("/users", userRoute);
 
 
 app.listen(port, () => {

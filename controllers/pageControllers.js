@@ -22,3 +22,9 @@ exports.getDashboardPage = (req, res) => {
         page_name: 'dashboard'
     });
 };
+// register page
+exports.getRegisterPage = (req, res) => {
+    res.status(200).render('register', {
+        page_name: 'register'
+    });
+};
